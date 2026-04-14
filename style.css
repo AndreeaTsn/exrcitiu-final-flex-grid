@@ -169,22 +169,3 @@ border: solid 4px black;}
     h3{border: solid 2px grey;}
 
 
-.project-item .project-number {
-  animation: fadeUp 0.6s ease forwards;
-  animation-delay: 0.1s;
-}
-
-.project-item h3 {
-  animation: fadeUp 0.6s ease forwards;
-  animation-delay: 0.3s;
-}
-
-.project-item .project-description {
-  animation: fadeUp 0.6s ease forwards;
-  animation-delay: 0.5s;
-}
-
-.project-item .project-tags {
-  animation: fadeUp 0.6s ease forwards;
-  animation-delay: 0.7s;
-}
