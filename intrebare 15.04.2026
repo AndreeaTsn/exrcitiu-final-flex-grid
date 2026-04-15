@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="layout-container">
+
+        <header class="header-container">
+            <h2 class="header-item">Bogdan G.</h2>
+            <p class="header-item about stergere">About</p>
+            <p class="header-item stergere">Proiecte</p>
+            <p class="header-item stergere">Experienta</p>
+            <p class="header-item stergere">Stack</p>
+            <p class="header-item "><button class="button">Contact</button></p>
+
+        </header>
+
+        <aside class="aside-software">
+            <div class="left">
+                <div class="subtitle">SOFTWARE ARCHITECT · SIBIU, RO</div>
+
+                <h1 class="sisteme">
+                    Sisteme<br>
+                    care <span>scalează</span>,<br>
+                    cod care durează.
+                </h1>
+
+                <p class="description">
+                    Full stack developer cu 8+ ani experiență în Angular, Spring Boot și .NET Core.
+                    Construiesc arhitecturi microservicii, pipeline-uri DevOps și interfețe care funcționează.
+                </p>
+                <button class="btn">
+                    VEZI PROIECTELE →
+                </button>
+                <a href="#contact" class="link">
+                    DISCUTĂM
+                </a>
+            </div>
+
+
+            <div class="right">
+                <div class="box black">
+                    8+
+                    <small>ANI EXPERIENȚĂ</small>
+                </div>
+
+                <div class="box light">
+                    40+
+                    <small>PROIECTE LIVRATE</small>
+                </div>
+
+                <div class="box light"> 3
+                    <small>STACK-URI PRINCIPALE</small>
+                </div>
+                <div class="box accent"> ∞
+                    <small>CURIOZITATE</small>
+                </div>
+            </div>
+
+        </aside>
+        <main>
+
+            <section>
+
+            </section>
+
+            <section>
+
+            </section>
+
+            <section>
+
+            </section>
+
+            <section>
+
+            </section>
+
+        </main>
+
+        <aside>
+
+        </aside>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
