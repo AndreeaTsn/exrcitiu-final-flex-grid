@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f5f2ee;
+    color: #111;
+}
+
+.div-container {
+    border: 2px solid yellow;
+    padding: 20px 60px;
+
+}
+
+.header-container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px;
+    gap: 15px;
+}
+
+.header-item {
+    border: 2px solid red;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.contact-btn {
+
+    margin-left: auto;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.sisteme {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+ .stergere {
+        display: none;
+    }
+
+
+@media (min-width: 768px) {
+   
+.stergere {
+        display: block;
+    }
+
+}
+
+.aside-software {
+    border: solid 4px darkcyan;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right"
+        "left right"
+        "section section";
+    height: 100vh;
+    width: 100vw;
+    padding: 40px 60px;
+}
+
+.left {
+    border: solid 2px red;
+    grid-area: left;
+
+
+}
+
+.right {
+    border: 2px solid green;
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px;
+    font-weight: bold;
+    padding: 30px;
+    font-size: 40px;
+    font-family: Georgia, serif;
+}
+
+.box small {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #666;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.black {
+    background-color: black;
+    color: aliceblue;
+}
+
+.accent {
+    background-color: orangered;
+    color: aliceblue;
+}
+
+.sisteme span {
+    color: #c94c2c;
+    font-style: italic;
+}
+
+.description {
+    border: 2px solid violet;
+    margin-top: 10%;
+}
+
+.sisteme {
+    border: 2px solid pink;
+    margin-bottom: 25%;
+}
+
+.btn {
+    width: 180px;
+    height: 80px;
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.link {
+    margin-left: 20px;
+    color: #111;
+}
+
+.link {
+    color: grey
+}
+
+.contact-btn {
+    margin-right: 30px;
+}
+
+@media(max-width: 902px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100vw;
+    }
+
+    .container-software {
+        margin-right: 2px;
+        padding-right: 20px;
+    }
+}
+
+.section-container {
+    border: 2px solid black;
+    grid-area: section;
+    background-color: black;
+    color: aliceblue;
+}
+
+.about-container {
+    border: 2px solid brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "about text";
+}
+
+.about-item {
+    grid-area: about;
+}
+
+.text {
+    grid-area: text;
+    border: solid 2px red
+}
+
+.cutii {
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cutie {
+    border: 2px grey solid;
+    margin: 8px 8px;
+}
+
+@media(max-width: 902px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.projects-section {
+    border: 2px solid red;
+}
+
+.project-header {
+    border: solid 2px green;
+}
+
+.project-number {
+    grid-area: number;
+    border: solid 4px black;
+}
+
+.project-content {
+    grid-area: content;
+    border: solid 2px yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    grid-area: description;
+    border: solid 2px brown;
+}
+
+.project-tags {
+    grid-area: tags;
+    border: solid 2px green;
+}
+
+.project-item {
+    border: solid 4px pink;
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    gap: 40px 40px;
+}
+
+h3 {
+    border: solid 2px grey;
+}
