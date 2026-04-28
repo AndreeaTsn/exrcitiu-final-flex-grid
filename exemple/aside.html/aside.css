@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f5f2ee;
+    color: #111;
+}
+
+
+
+.aside-software {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+        "info info "
+        "info info"
+        "experienta light"
+        "stack accent";
+}
+
+.info {
+    grid-area: info;
+}
+
+.experienta {
+    grid-area: experienta;
+}
+
+.light {
+    grid-area: light;
+}
+
+.stack {
+    grid-area: stack;
+}
+
+.accent {
+    grid-area: accent;
+}
+
+.box {
+    border: 2px solid green;
+}
+
+
+
+
+
+.accent {
+    background-color: orangered;
+}
+
+.sisteme span {
+    color: #c94c2c;
+    font-style: italic;
+}
+
+.subtitle {
+    color: gray;
+}
+
+@media(min-width:712px) {
+    .box {
+        display: grid;
+    }
+
+    .experienta {
+        background-color: black;
+        color: white;
+    }
+    .aside-software {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "info info experienta light"
+        "info info stack accent";
+}
+}

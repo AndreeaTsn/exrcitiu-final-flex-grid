@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.projects-header {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    margin-left: auto;
+    text-align: center;
+}
+
+.project-tags {
+    display: none;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "number text"
+        "number text"
+        "number text"
+        "number text"
+        "number text";
+
+
+}
+
+.project-number {
+    grid-area: number;
+    border: 2px solid pink;
+    margin-bottom: 0%;
+}
+
+.projects-header {
+    grid-area: titlu;
+    border: 2px solid violet;
+}
+
+.project-content {
+    grid-area: text;
+    border: 2px solid orange;
+}
+
+.sageata {
+    display: none;
+}
+
+@media (min-width:720px) {
+    .sageata {
+        border: solid 4px blue;
+        display: block;
+        grid-area: sageata;
+    }
+
+    .project-tags {
+        display: block;
+        grid-area: tags;
+    }
+
+    .project-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata";
+
+
+    }
+
+    .project-tag {
+        border: 2px solid gray;
+    }
+
+    .projects-header {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+
+    }
+
+    .proiecte {
+        text-align: left;
+    }
+}

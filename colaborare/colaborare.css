@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+}
+
+.body-container {
+    background-color: antiquewhite;
+}
+
+.main-containerCC {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container {
+    border: 2px solid rgb(15, 19, 15);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.copyright {
+    border: 2px solid orange;
+    margin-right: 60%;
+    color: aliceblue;
+}
+
+.html {
+    border: 2px solid violet;
+    color: white;
+}

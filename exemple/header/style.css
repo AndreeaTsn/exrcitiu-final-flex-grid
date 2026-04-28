@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f5f2ee;
+    color: #111;
+}
+button{
+    display: block;
+}
+
+.details-container {
+    display: none;
+}
+
+
+.header-container{
+    border:2px solid red;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+
+}
+
+
+@media(min-width:720px) {
+   .details-container {
+    display: flex;
+    flex-direction: row;
+     gap: 5px;
+    }
+
+ 
+}
