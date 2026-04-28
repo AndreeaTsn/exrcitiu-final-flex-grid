@@ -1,171 +1,443 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: Georgia, serif;
     background: #f5f2ee;
     color: #111;
 }
-.div-container {
-    border: 2px solid yellow;
-    padding: 20px 60px;
-    
+
+button {
+    display: block;
 }
+
+.details-container {
+    display: none;
+}
+
 
 .header-container {
-    border: 2px solid green;
+    border: 2px solid red;
     display: flex;
     flex-direction: row;
-    padding: 5px 5px;
-    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
-.header-item {
+.aside-software {
     border: 2px solid red;
-    border: none;
-    color: #666;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-
-.contact-btn {
-    
-    margin-left: auto;
-    background: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-}
-.sisteme {
-    font-size: 70px;
-    line-height: 1.1;
-    font-weight: bold;
-}
-
- @media (max-width: 768px) {
-    .stergere {
-        display: none;
-    }
-   
-
-}
-
-.container-software{
-    border: solid 4px darkcyan;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left right"
-                         "left right"
-                         "section section";
-  height:100vh;
-width: 100vw;  
-padding: 40px 60px;
-}
-.left{ border: solid 2px red;
-    grid-area: left;
-    
-    
-}
-.right{border: 2px solid green;
-    grid-area: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    
-   
-   
+    grid-template-areas:
+        "info info "
+        "info info"
+        "experienta light"
+        "stack accent";
+}
+
+.info {
+    grid-area: info;
+}
+
+.experienta {
+    grid-area: experienta;
+}
+
+.light {
+    grid-area: light;
+}
+
+.stack {
+    grid-area: stack;
+}
+
+.accent {
+    grid-area: accent;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
-   justify-content: flex-end;
-  align-items: flex-start;  
-  padding: 30px;
-  font-weight: bold;
-    padding: 30px;
-    font-size: 40px;
-    font-family: Georgia, serif;
+    border: 2px solid green;
 }
-.box small {
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #666;
-    margin-top: 8px;
-     font-weight: 400;
+
+
+
+
+
+.accent {
+    background-color: orangered;
 }
-.black{background-color: black;
-color: aliceblue;}
-.accent{ background-color: orangered;
-color: aliceblue;}
+
 .sisteme span {
     color: #c94c2c;
     font-style: italic;
 }
-.description{border: 2px solid violet;
-margin-top: 10%;}
-.sisteme{border: 2px solid pink;
-margin-bottom: 25%;}
-.btn{ width: 180px;
-height: 80px;
-    background: black;
+
+.subtitle {
+    color: gray;
+}
+
+.profile-container {
+    background-color: antiquewhite;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "about "
+        "construiesc"
+        " lucrez"
+        " paralel"
+        "cutii"
+    ;
+}
+
+.about-container {
+    border: 2px solid pink;
+    grid-area: about;
+}
+
+.construiesc-container {
+    grid-area: construiesc;
+}
+
+.lucrez-container {
+    grid-area: lucrez;
+}
+
+.paralel-container {
+    grid-area: paralel;
+}
+
+.cutii {
+    grid-area: cutii;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+button:hover {
+    background-color: rgb(23, 28, 16);
     color: white;
-    padding: 12px 20px;
-    border: none;
-    margin-top: 20px;
 }
 
-.link {
-    margin-left: 20px;
-    color: #111;
-}
-.link{color:grey}
-.contact-btn{margin-right: 30px;}
-@media(max-width: 902px){
-    .right{display: none;}
-    .left{width: 100vw; }
-    .container-software{margin-right: 2px; padding-right: 20px;}
+.cutie {
+    border: 2px solid gray;
+    height: 20px;
+    /* flex: 1 1 calc(25% - 10px);
+    text-align: center; */
 }
 
-.section-container{
-    border: 2px solid black;
-    grid-area: section;
-background-color: black;
-color: aliceblue;
+span {
+    color: orange;
 }
-.about-container{border: 2px solid brown; display: grid;
+.projects-header {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-proiecte {
+    border: 2px solid orange;
+    margin-left: auto;
+    text-align: center;
+    margin-left: 0%;
+    padding-left: 0%;
+    margin-right: 12%;
+}
+
+h2 {
+    border: 2px solid yellow;
+}
+
+
+.project-tags {
+    display: none;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "number text"
+        "number text"
+        "number text"
+        "number text"
+        "number text";
+
+
+}
+
+.project-number {
+    grid-area: number;
+    border: 2px solid pink;
+    margin-bottom: 0%;
+}
+
+.projects-header {
+    grid-area: titlu;
+    border: 2px solid violet;
+}
+
+.project-content {
+    grid-area: text;
+    border: 2px solid orange;
+}
+
+
+.experience-container {
+    border: 2px solid red;
+    /* background-color: black; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: "container1"
+        " container2"
+        " container3"
+    ;
+}
+
+.experience-item-container1 {
+    border: 2px solid green;
+    grid-area: container1;
+}
+
+.experience-item-container2 {
+    border: 2px solid green;
+    grid-area: container2;
+}
+
+.expericen-item-container3 {
+    border: 2px solid green;
+    grid-area: container3;
+
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "data functie"
+        "data locatia"
+        "data text";
+}
+
+.data {
+    grid-area: data;
+}
+
+.functie {
+    grid-area: functie;
+    color: white;
+}
+
+.locatia {
+    grid-area: locatia;
+    color: orange;
+}
+
+.text {
+    grid-area: text;
+}
+.titlu{color: white;}
+.experienta{color: grey;text-transform: uppercase;}
+
+.body-container {
+    border: 2px solid red;
+    font-family: Georgia, serif;
+    background-color: #f7f6f4;
+
+
+}
+
+.stack-header-container {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    grid-area: stack;
+}
+
+.grid-container {
+    border: 2px solid pink;
+
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-     grid-template-areas:"about text" ;}
-.about-item{grid-area: about;}
-.text{grid-area:text;
-border:solid 2px red}
-.cutii{border: 2px solid yellow; 
+    grid-template-areas:
+        "frontend backend"
+        "infrastructure data"
+    ;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: grey;
+    border: solid 2px violet;
     display: flex;
-flex-direction: row;
-flex-wrap: wrap;}
-.cutie{border: 2px grey solid;margin: 8px 8px;}
-@media(max-width: 902px){
-  .about-container{display: flex;
-   flex-direction: column ;} 
+    align-items: flex-end;
+    padding-bottom: 4px;
+}
+
+.stack-header-container h1 {
+    border: solid 2px black;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+    padding-bottom: 0%;
+}
+
+.card {
+    border: 2px solid orangered;
+
+
+}
+
+.card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#frontend {
+    grid-area: frontend;
+}
+
+#backend {
+    grid-area: backend;
+}
+
+#infrastructure {
+    grid-area: infrastructure;
+}
+
+#data {
+    grid-area: data;
+}
+
+button {
+    display: block;
 }
 
 
 
-.projects-section{
+.main-containerCC {
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.project-header{border: solid 2px green;}
-.project-number{grid-area: number;
-border: solid 4px black;}
-.project-content{grid-area: content; border: solid 2px yellow;  display: flex; flex-direction: column;}
-.project-description{grid-area: description; border: solid 2px brown;}
-.project-tags{grid-area:tags; border: solid 2px green;}
-.project-item{border: solid 4px pink; display:flex; flex-direction: row; align-items: first baseline; gap: 40px 40px;
+
+.box {
+    display: flex;
+    flex-direction: row;
+   
+}
+#elements-container{width: 100%; display: block;}
+
+.footer-container {
+    border: 2px solid rgb(15, 19, 15);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+.copyright {
+    border: 2px solid orange;
+    margin-right: 60%;
+    color: aliceblue;
+}
+
+.html {
+    border: 2px solid violet;
+    color: white;
+}
+@media(min-width:720px) {
+    .details-container {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
     }
-    h3{border: solid 2px grey;}
+
+    .box {
+        display: grid;
+    }
+
+    .experienta {
+        background-color: black;
+        color: white;
+    }
+
+    .aside-software {
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "info info experienta light"
+            "info info stack accent";
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "about construiesc"
+            "about lucrez"
+            "about paralel"
+            "about cutii"
+
+        ;
+        height: 80vh;
+    }
+      .sageata {
+        border: solid 4px blue;
+        display: block;
+        grid-area: sageata;
+    }
+  .sageata:hover{
+        border: 2px solid red;
+        background-color: aqua;
+        color: bisque;
+    }
+
+    .project-tags {
+        display: block;
+        grid-area: tags;
+        border: 2px solid rgb(95, 14, 14);
+        align-self: center;
+    }
+    .project-tag{border: 2px solid rgb(138, 129, 129);}
+
+    .project-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata"
+            "number text tags sageata";
 
 
+    }
+  .experience-container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "container1 container2"
+            "container1 container3"
+            "container1 container3"
+        ;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "frontend backend infrastructure data";
+    }
+
+}
